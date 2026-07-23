@@ -1,0 +1,36 @@
+{
+"skills":[
+  "Java",
+  "Swing",
+  "Spring Boot",
+  "Django",
+  "HTML",
+  "CSS",
+  "Python",
+  "REST",
+  "RESTful API",
+  "REST API",
+  "SQL",
+  "MySQL",
+  "PostgreSQL",
+  "Git",
+  "GitHub",
+  "Jenkins",
+  "Tableau",
+  "R",
+  "R programming",
+  "MS Office",
+  "Microsoft Office",
+  "MS Excel",
+  "Microsoft Excel",
+  "MS Word",
+  "Microsoft Word"
+],
+"roles":[
+    "Java Developer",
+    "Java Backend Developer",
+    "Java Full Stack Developer",
+    "Java Engineer",
+    "Software Engineer"
+]
+}
