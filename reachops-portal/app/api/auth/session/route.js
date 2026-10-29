@@ -1,8 +1,9 @@
-import { NextResponse } from 'next/server';
+import { connection, NextResponse } from 'next/server';
 import { currentCloudSession } from '@/lib/supabase-rest';
 import { getSupabaseConfig } from '@/lib/supabase-config';
 
 export async function GET() {
+  await connection();
   const session = await currentCloudSession();
   return NextResponse.json({
     success: true,

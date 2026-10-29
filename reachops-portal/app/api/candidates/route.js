@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { connection, NextResponse } from 'next/server';
 import {
   getAllCandidates,
   getCandidateResumes
@@ -61,6 +61,7 @@ function findMatchingResumes(candidate, resumes) {
 }
 
 export async function GET(request) {
+  await connection();
   try {
     const proxied = await proxyBackendRequest(request, '/api/candidates');
     if (proxied) return proxied;

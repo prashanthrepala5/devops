@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { connection, NextResponse } from 'next/server';
 import { profileErrorResponse } from '@/lib/profile-api';
 import { proxyBackendRequest } from '@/lib/backend-proxy';
 import { currentCloudSession, cloudStorageConfigured, getCloudProfile, updateCloudProfile, deleteCloudProfile } from '@/lib/supabase-rest';
@@ -10,6 +10,7 @@ import {
 } from '@/lib/profile-store';
 
 export async function GET(_request, { params }) {
+  await connection();
   try {
     const { id } = await params;
     const proxied = await proxyBackendRequest(_request, `/api/profiles/${encodeURIComponent(id)}`);
