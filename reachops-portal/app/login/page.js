@@ -59,7 +59,7 @@ export default function LoginPage() {
         <h1>{authenticated ? 'You’re signed in' : mode === 'signin' ? 'Welcome back' : 'Create your account'}</h1>
         <p className={styles.subtitle}>Your candidate profiles and resumes are private to your account.</p>
 
-        {configured === false && <div className={styles.notice} role="alert"><strong>Finish Supabase setup first</strong><span>Add the Supabase project URL and publishable key to the Vercel environment, then redeploy.</span></div>}
+        {configured === false && <div className={styles.notice} role="alert"><strong>Finish Supabase setup first</strong><span>Add the Supabase project URL and publishable key to your hosting environment, then redeploy.</span></div>}
         {authenticated ? (
           <div className={styles.signedIn}>
             <p>Your account is ready.</p>

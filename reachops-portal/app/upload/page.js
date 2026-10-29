@@ -93,7 +93,10 @@ export default function UploadPage() {
         const res = await fetch('/api/candidates');
         const data = await res.json();
         if (!res.ok) {
-          if (data.setupRequired) setSetupRequired(data.error);
+          if (data.setupRequired) {
+            if (isMounted) setSetupRequired(data.error || 'Connect Supabase before accepting resume uploads.');
+            return;
+          }
           throw new Error(data.error || 'Failed to load candidate list');
         }
         if (isMounted && data.success && Array.isArray(data.candidates)) {
@@ -303,7 +306,7 @@ export default function UploadPage() {
 
       <div className="profile-storage-notice" role="note">
         <strong>Profile storage and privacy</strong>
-        <span>On Vercel, ReachOps uses Supabase sign-in, owner-scoped profile records, and a private resume bucket. Configure the Supabase project URL and publishable key, then run the included database setup SQL before accepting uploads.</span>
+        <span>Hosted uploads use Supabase sign-in, owner-scoped profile records, and a private resume bucket. Configure the Supabase project URL and publishable key, then run the included database setup SQL before accepting uploads.</span>
       </div>
       {setupRequired && <div className="setup-required-notice" role="alert"><strong>Deployment setup required</strong><span>{setupRequired}</span></div>}
 

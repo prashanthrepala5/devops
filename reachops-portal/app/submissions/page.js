@@ -168,7 +168,7 @@ export default function SubmissionsPage() {
 
       <div className="profile-storage-notice" role="note">
         <strong>Profile storage</strong>
-        <span>On Vercel, this list is scoped to the signed-in account. Locally, profiles remain in the shared operator workspace used by the separate automation.</span>
+        <span>On hosted deployments, this list is scoped to the signed-in account. Locally, profiles remain in the shared operator workspace used by the separate automation.</span>
       </div>
       {setupRequired && <div className="setup-required-notice" role="alert"><strong>Deployment setup required</strong><span>{setupRequired}</span></div>}
 

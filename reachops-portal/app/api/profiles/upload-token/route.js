@@ -15,7 +15,7 @@ export async function POST(request) {
       return NextResponse.json({ success: true, ...upload }, { headers: { 'Cache-Control': 'no-store' } });
     }
     assertProfileStorageAvailable();
-    return NextResponse.json({ success: false, error: 'Signed uploads are enabled for the configured Vercel storage service.' }, { status: 503 });
+    return NextResponse.json({ success: false, error: 'Signed uploads are disabled until private storage is configured for this deployment.' }, { status: 503 });
   } catch (error) {
     return profileErrorResponse(error);
   }

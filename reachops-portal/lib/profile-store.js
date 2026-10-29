@@ -28,7 +28,7 @@ export function profileDataRoot() {
 
 export function assertProfileStorageAvailable() {
   if (process.env.VERCEL === '1' || process.env.VERCEL === 'true') {
-    const error = new Error('Profile storage is not configured for Vercel. Connect authentication, a database, and private object storage before accepting uploads.');
+    const error = new Error('Profile storage is not configured for this hosted deployment. Connect authentication, a database, and private object storage before accepting uploads.');
     error.code = 'PROFILE_STORAGE_NOT_CONFIGURED';
     throw error;
   }

@@ -114,7 +114,7 @@ export async function GET(request) {
     if (error.code === 'PROFILE_STORAGE_NOT_CONFIGURED') {
       return NextResponse.json({
         success: false,
-        error: 'Connect Supabase Auth, run the ReachOps database setup SQL, and add NEXT_PUBLIC_SUPABASE_URL plus NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY in Vercel before uploading resumes.',
+        error: 'Connect Supabase Auth, run the ReachOps database setup SQL, and add NEXT_PUBLIC_SUPABASE_URL plus NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY in your hosting environment before uploading resumes.',
         setupRequired: true
       }, { status: 503 });
     }
