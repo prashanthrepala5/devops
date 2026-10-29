@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b2e">
+  <meta name="description" content="A review-first dashboard concept for LinkedIn recruiter outreach automation.">
+  <title>ReachOps — Recruiter outreach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="ReachOps home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 23V9h7.2c4.4 0 7 2.2 7 5.6 0 2.2-1.2 3.8-3.3 4.7L23 23h-5.4l-4.3-6.7h-1.8V23H7Zm4.5-10.1v3.1h2.3c1.8 0 2.8-.4 2.8-1.6s-1-1.5-2.8-1.5h-2.3Z"/><circle cx="24.5" cy="8" r="3.5"/></svg></span>
+        <span class="brand-copy"><strong>reach<span>ops</span></strong><small>OUTREACH WORKSPACE</small></span>
+      </a>
+
+      <div class="workspace-switcher"><span class="workspace-avatar">VA</span><span><b>Vaishak's workspace</b><small>Personal workspace</small></span><svg class="chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></div>
+
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-item active" href="#overview" data-view="overview"><svg viewBox="0 0 20 20"><rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="11" y="3" width="6" height="4" rx="1.5"/><rect x="11" y="9" width="6" height="8" rx="1.5"/><rect x="3" y="11" width="6" height="6" rx="1.5"/></svg>Overview</a>
+        <a class="nav-item" href="#campaigns" data-view="campaigns"><svg viewBox="0 0 20 20"><path d="M3 5.5h14M3 10h14M3 14.5h9"/><circle cx="15.5" cy="14.5" r="2"/></svg>Campaigns<span class="nav-count">2</span></a>
+        <a class="nav-item" href="#candidates" data-view="candidates"><svg viewBox="0 0 20 20"><circle cx="10" cy="6.5" r="3"/><path d="M4 17c.4-3.3 2.4-5 6-5s5.6 1.7 6 5"/></svg>Candidates</a>
+        <a class="nav-item" href="#activity" data-view="activity"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.7 1.7"/></svg>Activity</a>
+      </nav>
+
+      <div class="nav-label tools-label">TOOLS</div>
+      <a class="nav-item" href="#settings" data-view="settings"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/><path d="M16.4 11.8a6.7 6.7 0 0 0 0-3.6l1.1-.9-1.7-2.9-1.4.5a7.4 7.4 0 0 0-3.1-1.8L11 1.7H8l-.3 1.4a7.4 7.4 0 0 0-3.1 1.8l-1.4-.5-1.7 2.9 1.1.9a6.7 6.7 0 0 0 0 3.6l-1.1.9 1.7 2.9 1.4-.5a7.4 7.4 0 0 0 3.1 1.8l.3 1.4h3l.3-1.4a7.4 7.4 0 0 0 3.1-1.8l1.4.5 1.7-2.9-1.1-.9Z" transform="translate(0 -1) scale(.9) translate(1 1)"/></svg>Settings</a>
+
+      <div class="sidebar-bottom">
+        <div class="help-card"><div class="help-icon">?</div><div><b>Need a hand?</b><p>Check the workflow guide</p><a href="#guide" data-toast="The workflow guide is not connected in this demo.">Open guide <span>↗</span></a></div></div>
+        <button class="profile-button" type="button"><span class="profile-avatar">VK</span><span><b>Vaishak K.</b><small>Workspace owner</small></span><svg class="more" viewBox="0 0 18 18"><circle cx="4" cy="9" r="1"/><circle cx="9" cy="9" r="1"/><circle cx="14" cy="9" r="1"/></svg></button>
+      </div>
+    </aside>
+
+    <main class="main-content" id="overview">
+      <header class="topbar">
+        <button class="mobile-menu" id="menu-toggle" aria-label="Open navigation"><svg viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14"/></svg></button>
+        <div class="breadcrumbs"><span>Workspace</span><span class="crumb-slash">/</span><b>Overview</b></div>
+        <div class="topbar-actions"><span class="sample-pill"><i></i> SAMPLE WORKSPACE</span><button class="icon-button" aria-label="Notifications" data-toast="You’re all caught up."><svg viewBox="0 0 20 20"><path d="M15.5 8a5.5 5.5 0 0 0-11 0c0 6-2 6-2 7.5h15C17.5 14 15.5 14 15.5 8ZM8 18h4"/></svg><span class="notification-dot"></span></button><span class="top-avatar">VK</span></div>
+      </header>
+
+      <div class="page-wrap">
+        <section class="welcome-row">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span>MONDAY, OCTOBER 12, 2026</div><h1>Good afternoon, Vaishak <span class="wave">✳</span></h1><p class="page-subtitle">Here’s what’s happening across your outreach workspace.</p></div>
+          <button class="button button-primary" id="new-campaign"><svg viewBox="0 0 20 20"><path d="M10 4v12M4 10h12"/></svg>New campaign</button>
+        </section>
+
+        <div class="demo-banner"><span class="demo-icon"><svg viewBox="0 0 20 20"><path d="M10 2.5 18 17H2l8-14.5Z"/><path d="M10 7v4.5M10 14.3v.2"/></svg></span><span><b>Review required</b> Summary figures and activity are sample data. Searches load live matches; each email must be reviewed and sent individually.</span><button aria-label="Dismiss review notice" id="dismiss-banner">×</button></div>
+
+        <section class="metrics-grid" aria-label="Campaign summary">
+          <article class="metric-card"><div class="metric-top"><span class="metric-icon icon-blue"><svg viewBox="0 0 20 20"><path d="M3 5.5h14M3 10h14M3 14.5h9"/><circle cx="15.5" cy="14.5" r="2"/></svg></span><span class="metric-period">LAST 7 DAYS</span></div><div class="metric-value">128</div><div class="metric-label">Jobs found <span class="metric-change positive">↗ 18%</span></div><div class="metric-foot">Across 4 search runs</div></article>
+          <article class="metric-card"><div class="metric-top"><span class="metric-icon icon-teal"><svg viewBox="0 0 20 20"><path d="m3 10 4 4 10-10"/><circle cx="10" cy="10" r="7.3"/></svg></span><span class="metric-period">LAST 7 DAYS</span></div><div class="metric-value">34</div><div class="metric-label">Matched your filters <span class="metric-change positive">↗ 12%</span></div><div class="metric-foot">26.6% match rate</div></article>
+          <article class="metric-card"><div class="metric-top"><span class="metric-icon icon-violet"><svg viewBox="0 0 20 20"><path d="M5 2.5h7l4 4V17H5zM12 2.5v4h4M8 11h5M8 14h5"/></svg></span><span class="metric-period">LAST 7 DAYS</span></div><div class="metric-value">12</div><div class="metric-label">Resumes prepared <span class="metric-change neutral">↗ 3 this week</span></div><div class="metric-foot">Awaiting your review: 3</div></article>
+          <article class="metric-card"><div class="metric-top"><span class="metric-icon icon-amber"><svg viewBox="0 0 20 20"><path d="m3 6 7 5 7-5M4 4h12a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/></svg></span><span class="metric-period">LAST 7 DAYS</span></div><div class="metric-value">8</div><div class="metric-label">Outreach sent <span class="metric-change neutral">of 12 reviewed</span></div><div class="metric-foot">All messages manually approved</div></article>
+        </section>
+
+        <section class="campaign-section panel">
+          <div class="section-heading"><div><div class="section-kicker">YOUR WORKSPACE</div><h2>Campaigns <span class="heading-count">2</span></h2></div><button class="text-button" data-view="campaigns">View all campaigns <span>→</span></button></div>
+          <div class="campaign-card">
+            <div class="campaign-main"><span class="campaign-logo logo-blue">FE</span><div><div class="campaign-title-row"><h3>Frontend Engineer · US</h3><span class="status status-active"><i></i>Active</span></div><p>WEB preset <span class="bullet">•</span> Vijay profile <span class="bullet">•</span> Updated 18 min ago</p></div></div>
+            <div class="campaign-progress-wrap"><div class="progress-caption"><span>Progress to target</span><b>8 <small>/ 12</small></b></div><div class="progress-track"><span style="width:66.67%"></span></div><small class="progress-foot">8 reviewed and approved</small></div>
+            <button class="icon-button campaign-more" aria-label="Campaign options" data-toast="Campaign options are unavailable in this preview."><svg viewBox="0 0 18 18"><circle cx="4" cy="9" r="1"/><circle cx="9" cy="9" r="1"/><circle cx="14" cy="9" r="1"/></svg></button>
+          </div>
+          <div class="campaign-card campaign-card-secondary">
+            <div class="campaign-main"><span class="campaign-logo logo-purple">DE</span><div><div class="campaign-title-row"><h3>Data Engineer · Remote</h3><span class="status status-paused"><i></i>Paused</span></div><p>DATA preset <span class="bullet">•</span> Abdul Safi profile <span class="bullet">•</span> Updated yesterday</p></div></div>
+            <div class="campaign-progress-wrap"><div class="progress-caption"><span>Progress to target</span><b>4 <small>/ 10</small></b></div><div class="progress-track"><span class="progress-purple" style="width:40%"></span></div><small class="progress-foot">Paused by you</small></div>
+            <button class="icon-button campaign-more" aria-label="Campaign options" data-toast="Campaign options are unavailable in this preview."><svg viewBox="0 0 18 18"><circle cx="4" cy="9" r="1"/><circle cx="9" cy="9" r="1"/><circle cx="14" cy="9" r="1"/></svg></button>
+          </div>
+        </section>
+
+        <div class="lower-grid">
+          <section class="panel results-panel">
+            <div class="section-heading results-heading"><div><div class="section-kicker">REVIEW QUEUE</div><h2>Recent matches <span class="heading-count">3</span></h2></div><button class="text-button" data-view="campaigns">See all <span>→</span></button></div>
+            <div class="table-tools"><label class="search-box"><svg viewBox="0 0 20 20"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><input id="job-search" type="search" placeholder="Search roles or companies" aria-label="Search roles or companies"></label><button class="filter-button" id="filter-button"><svg viewBox="0 0 20 20"><path d="M3 5h14M5.5 10h9M8 15h4"/></svg>Filters <span class="filter-dot"></span></button></div>
+            <div class="jobs-list" id="jobs-list">
+              <article class="job-row" data-search="senior frontend engineer northstar labs react typescript next.js"><div class="company-mark northstar">N</div><div class="job-info"><div class="job-title">Senior Frontend Engineer <span class="sample-tag">SAMPLE</span></div><div class="job-company">Northstar Labs <span>·</span> Austin, TX</div><div class="job-tags"><span>React</span><span>TypeScript</span><span>Next.js</span></div></div><div class="job-meta"><span class="match-score"><i></i>92% match</span><span>2h ago</span></div><button class="row-action" aria-label="Review Senior Frontend Engineer at Northstar Labs" data-job="northstar">→</button></article>
+              <article class="job-row" data-search="full stack developer clearpath ai remote node.js react aws"><div class="company-mark clearpath">C</div><div class="job-info"><div class="job-title">Full Stack Developer <span class="sample-tag">SAMPLE</span></div><div class="job-company">Clearpath AI <span>·</span> Remote, US</div><div class="job-tags"><span>Node.js</span><span>React</span><span>AWS</span></div></div><div class="job-meta"><span class="match-score"><i></i>86% match</span><span>5h ago</span></div><button class="row-action" aria-label="Review Full Stack Developer at Clearpath AI" data-job="clearpath">→</button></article>
+              <article class="job-row" data-search="frontend developer orbit commerce new york ny javascript vue"><div class="company-mark orbit">O</div><div class="job-info"><div class="job-title">Frontend Developer <span class="sample-tag">SAMPLE</span></div><div class="job-company">Orbit Commerce <span>·</span> New York, NY</div><div class="job-tags"><span>JavaScript</span><span>Vue</span><span>CSS</span></div></div><div class="job-meta"><span class="match-score match-medium"><i></i>78% match</span><span>Yesterday</span></div><button class="row-action" aria-label="Review Frontend Developer at Orbit Commerce" data-job="orbit">→</button></article>
+              <div class="no-results" id="no-results" hidden>No matching roles. Try a different search.</div>
+            </div>
+          </section>
+
+          <section class="panel setup-panel">
+            <div class="section-heading setup-heading"><div><div class="section-kicker">QUICK SETUP</div><h2>Search configuration</h2></div><span class="config-indicator"><i></i>Draft</span></div>
+            <div class="form-grid">
+              <label class="field full-field"><span>Role or domain preset</span><span class="select-wrap"><select id="role-select"><option value="WEB">Web Development</option><option value="JAVA">Java Ecosystem</option><option value="QA">QA & Testing</option><option value="PYTHON">Python</option><option value="DEVOPS">DevOps</option><option value="DOTNET">.NET</option><option value="MOBILE">Mobile</option><option value="CUSTOM">Custom</option></select><svg viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></svg></span></label>
+              <label class="field full-field"><span>Candidate profile</span><span class="select-wrap"><select id="candidate-select"><option value="2">Vijay · Frontend / Full Stack</option><option value="1">Abdul Safi · Data / Cloud</option><option value="3">Reju Karkee · Software Engineering</option></select><svg viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></svg></span></label>
+              <label class="field"><span>Posted within</span><span class="select-wrap"><select id="date-select"><option value="24h">Past 24 hours</option><option value="week">Past week</option></select><svg viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></svg></span></label>
+              <label class="field"><span>Max. experience</span><span class="input-suffix"><input id="experience-input" type="number" min="0" max="30" value="3"><small>years</small></span></label>
+              <label class="field full-field"><span>Search modifiers</span><input id="modifiers-input" type="text" value="C2C USA -intern -entry -w2" class="text-input"></label>
+              <label class="field"><span>Target applications</span><span class="input-suffix"><input id="target-input" type="number" min="1" max="100" value="12"><small>matches</small></span></label>
+              <div class="field"><span>Experience filter</span><label class="toggle-control"><input type="checkbox" checked id="experience-toggle"><span class="toggle-track"></span><span class="toggle-text">Enabled</span></label></div>
+            </div>
+            <div class="setup-actions"><button class="button button-outline" id="save-config">Save draft</button><button class="button button-primary" id="start-search"><svg viewBox="0 0 20 20"><path d="m7 4 9 6-9 6V4Z"/></svg>Start search</button></div>
+            <p class="setup-note"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M8 7v4M8 5.2v.2"/></svg>Search does not send email. Open a live match to review and send an individual message.</p>
+          </section>
+        </div>
+
+        <div class="bottom-grid">
+          <section class="panel resume-panel"><div class="section-heading"><div><div class="section-kicker">NEXT STEP</div><h2>Resume review <span class="review-count">3 to review</span></h2></div><button class="text-button" data-toast="Resume queue is sample data in this preview.">View queue <span>→</span></button></div><div class="resume-card"><div class="document-icon"><svg viewBox="0 0 24 24"><path d="M6 2.8h8l4.5 4.5v14H6zM14 2.8v5h4.5M9 12h6M9 15.5h6"/></svg><span>DOCX</span></div><div class="resume-info"><b>Vijay_Resume_tailored.docx</b><span>For Senior Frontend Engineer · Prepared 2h ago</span><div class="skill-line"><span>Matched skills</span><b>React · TypeScript · Next.js</b></div></div><button class="button button-outline small-button" id="preview-resume">Preview</button></div></section>
+          <section class="panel activity-panel" id="activity"><div class="section-heading"><div><div class="section-kicker">WORKSPACE FEED</div><h2>Recent activity</h2></div><button class="text-button" data-view="activity">View log <span>→</span></button></div><div class="activity-list"><div class="activity-item"><span class="activity-icon activity-search"><svg viewBox="0 0 18 18"><circle cx="7.5" cy="7.5" r="4.8"/><path d="m11 11 4 4"/></svg></span><div><p><b>Search completed</b> · Web Development</p><small>128 posts scanned · 34 matches <span>18 min ago</span></small></div></div><div class="activity-item"><span class="activity-icon activity-resume"><svg viewBox="0 0 18 18"><path d="M4 2.5h7l3 3v10H4zM11 2.5v3h3M7 9h4M7 12h4"/></svg></span><div><p><b>Resume prepared</b> · Vijay profile</p><small>Senior Frontend Engineer <span>2h ago</span></small></div></div><div class="activity-item"><span class="activity-icon activity-mail"><svg viewBox="0 0 18 18"><path d="m2.5 5 6.5 4.7L15.5 5M3.5 3.5h11a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1Z"/></svg></span><div><p><b>Outreach approved</b> · Northstar Labs</p><small>Sent after manual review <span>Yesterday</span></small></div></div></div></section>
+        </div>
+        <footer class="page-footer"><span>ReachOps <span class="footer-dot">·</span> Preview workspace</span><span>Sample summary data · Live search results · Individually reviewed email</span></footer>
+      </div>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="review-modal" hidden>
+    <section class="review-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="close-modal" aria-label="Close dialog">×</button>
+      <div class="modal-kicker" id="modal-kicker">JOB MATCH · SAMPLE RECORD</div><h2 id="modal-title">Senior Frontend Engineer</h2><p class="modal-company" id="modal-company">Northstar Labs · Austin, TX</p>
+      <div class="modal-score"><span class="match-score"><i></i>92% match</span><span>Posted 2h ago</span></div>
+      <div class="modal-detail-grid"><div><small>Matched skills</small><b id="modal-skills">React · TypeScript · Next.js</b></div><div><small>Experience filter</small><b class="filter-pass" id="modal-experience">Passes · 3 years max</b></div><div><small>Candidate profile</small><b>Vijay · Frontend / Full Stack</b></div><div><small>Recruiter</small><b>Review required</b></div></div>
+      <div class="modal-note" id="modal-note"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M8 7v4M8 5.2v.2"/></svg>This is example data. No recruiter contact has been looked up, and no outreach will be sent.</div>
+      <div class="outreach-form" id="outreach-form" hidden>
+        <div class="outreach-heading"><b>Review email before sending</b><span>Candidate resume will be attached</span></div>
+        <label class="outreach-field">Recipient email<input id="outreach-to" type="email" autocomplete="email" placeholder="name@company.com" required></label>
+        <label class="outreach-field">Subject<input id="outreach-subject" type="text" maxlength="180" required></label>
+        <label class="outreach-field">Message<textarea id="outreach-message" rows="6" maxlength="12000" required></textarea></label>
+        <p class="outreach-warning">Sending uses the Gmail account configured for this project and sends immediately when you click “Send reviewed email.”</p>
+      </div>
+      <div class="modal-actions"><button class="button button-outline" id="close-review">Close</button><button class="button button-primary" id="review-outreach" hidden>Prepare email</button><button class="button button-primary" id="send-outreach" hidden>Send reviewed email</button></div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="resume-modal" hidden><section class="review-modal resume-preview-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title"><button class="modal-close" id="close-resume" aria-label="Close dialog">×</button><div class="modal-kicker">RESUME PREVIEW · SAMPLE</div><h2 id="resume-modal-title">Vijay_Resume_tailored.docx</h2><div class="resume-paper"><div class="paper-name">Vijay K.</div><div class="paper-role">FRONTEND / FULL STACK ENGINEER</div><hr><h4>SUMMARY</h4><p>Software engineer with experience building responsive web applications and scalable product interfaces.</p><h4>SKILLS HIGHLIGHTED FOR THIS ROLE</h4><div class="paper-skills">React <span>TypeScript</span><span>Next.js</span><span>JavaScript</span></div><h4>EXPERIENCE</h4><p>Frontend Engineer · Product application development, reusable UI systems, API integrations, and cross-functional delivery.</p></div><div class="modal-note"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M8 7v4M8 5.2v.2"/></svg>Example preview only; this file has not been generated by the dashboard.</div><div class="modal-actions"><button class="button button-outline" id="close-resume-action">Close preview</button></div></section></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -37,7 +37,12 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        // Dashboard searches reuse the user's existing Chrome installation.
+        // Ordinary CLI runs keep Playwright's bundled Chromium default.
+        ...(process.env.DASHBOARD_DRY_RUN === '1' ? { channel: 'chrome' } : {}),
+      },
     },
 
     {
@@ -78,4 +83,3 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
-
